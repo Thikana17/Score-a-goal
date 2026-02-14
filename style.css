@@ -28,7 +28,7 @@ body {
     font-weight: bold;
     display: flex;       /* Permet d'aligner l'icône et le texte */
     align-items: center; /* Centre verticalement */
-    border-radius: 5px;  /* (Optionnel) Arrondit un peu les coins */
+    border-radius: 5px;  /*  Arrondit un peu les coins */
 }
 
 .icone {
