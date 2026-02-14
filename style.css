@@ -1,0 +1,83 @@
+/* On centre l'écran du téléphone sur la page web */
+body {
+    background-color: #333; /* Fond sombre autour du téléphone */
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+}
+
+/* Le conteneur principal (le téléphone) */
+.ecran {
+    width: 320px;
+    height: 600px;
+    display: flex;
+    flex-direction: column; /* Empile le ciel et l'herbe l'un sur l'autre */
+}
+
+/* --- PARTIE HAUTE (GRIS) --- */
+.zone-ciel {
+    background-color: #e0e0e0; /* Gris clair */
+    height: 65%; /* Prend 65% de la hauteur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centre tout horizontalement */
+    justify-content: flex-end; /* Pousse le contenu vers le bas (vers l'herbe) */
+    position: relative;
+    padding-bottom: 0px;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    position: absolute; /* On le fixe pour qu'il ne bouge pas */
+    top: 50px;         /* Placé en haut */
+}
+
+.but {
+    font-size: 150px; /* Taille énorme pour l'émoji but */
+    line-height: 100px; /* Réduit l'espace sous l'émoji pour qu'il touche l'herbe */
+    margin-bottom: -10px; /* Petite astuce pour le coller à la ligne verte */
+    z-index: 1;
+}
+
+/* --- PARTIE BASSE (VERT) --- */
+.zone-herbe {
+    background-color: #388e3c; /* Vert herbe */
+    height: 35%; /* Le reste de la hauteur */
+    position: relative; /* Permet de placer le ballon et la bulle librement */
+}
+
+.ballon {
+    font-size: 60px;
+    position: absolute; /* Placement libre */
+    right: 30px;        /* A 30px de la droite */
+    top: 20px;          
+    cursor: pointer;    /* Affiche une petite main quand on passe la souris */
+}
+
+/* La bulle noire */
+.bulle-info {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    position: absolute;
+    bottom: 30px; 
+    left: 20px;   
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Le petit triangle (pointe) de la bulle */
+.pointe {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid black; /* Crée un triangle noir */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -10px; /* Le place sous la bulle */
+    right: -5px;  /* Le place vers la droite de la bulle (vers le ballon) */
+    transform: rotate(-30deg); /* Le penche un peu vers le ballon */
+}
