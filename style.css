@@ -1,0 +1,37 @@
+body {
+    background-color: #f0f0f0; /* Juste pour voir le fond de la page web */
+    font-family: Arial, sans-serif; /* Une police simple */
+    display: flex;
+    justify-content: center; /* Centre l'écran au milieu de la page */
+    padding-top: 50px;
+}
+
+.ecran {
+    background-color: #43a047; /* Le vert (similaire à l'image) */
+    width: 320px;  /* Largeur d'un mobile */
+    height: 600px; /* Hauteur d'un mobile */
+    padding: 20px; /* Espace à l'intérieur des bords */
+    box-sizing: border-box; /* Pour que le padding ne casse pas la largeur */
+}
+
+.icone-ballon {
+    text-align: right; /* Pousse le ballon à droite */
+    font-size: 50px;   /* Taille du ballon */
+    margin-bottom: 40px; /* Espace sous le ballon */
+}
+
+.boite {
+    background-color: #757575; /* Le fond gris des champs */
+    padding: 15px;
+    margin-bottom: 20px; /* Espace entre les boîtes */
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;       /* Permet d'aligner l'icône et le texte */
+    align-items: center; /* Centre verticalement */
+    border-radius: 5px;  /* (Optionnel) Arrondit un peu les coins */
+}
+
+.icone {
+    margin-right: 15px; /* Espace entre l'icône et le texte */
+    font-size: 24px;
+}
