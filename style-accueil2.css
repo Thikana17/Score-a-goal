@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: #e4e4e4; 
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; 
+}
+
+.ecran {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+.texte-haut {
+    position: absolute;
+    top: 5vh; 
+    width: 100%; 
+    text-align: center;
+    font-size: 26px; 
+    font-weight: bold;
+    color: #000;
+    line-height: 1.4;
+}
+
+
+.herbe-fond {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40vh; 
+    background-color: #439a31;
+}
+
+
+.bande-herbe {
+    position: absolute;
+    bottom: 39vh; 
+    width: 100%;
+    height: 15px; 
+    background-image: url("herbe foot.png"); 
+    background-repeat: repeat-x; 
+    background-size: auto 100%;
+}
+
+
+.cage {
+    position: absolute;
+    width: 25vw; 
+    max-width: 300px;
+    min-width: 250px;
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom: 37vh;
+}
+
+
+.ballon {
+    position: absolute;
+    width: 6vw;
+    max-width: 90px;
+    min-width: 60px;
+    left: calc(50% + 8vw); 
+    bottom: 28vh;
+}
+
+
+.bouton-bulle {
+    position: absolute;
+    left: calc(50% - 15vw); 
+    bottom: 20vh;
+    background-color: black;
+    color: white;
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px 30px 0 30px; 
+}
+
+
+@media (max-width: 800px) {
+    .texte-haut { font-size: 20px; }
+    .bouton-bulle { font-size: 14px; padding: 10px 20px; left: 10vw; }
+    .cage { width: 50vw; }
+    .ballon { width: 15vw; left: calc(50% + 15vw); }
+}
