@@ -5,14 +5,13 @@ body {
     background-color: #e4e4e4;
 }
 
-/* écran */
+
 .ecran {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
-/* texte */
 .texte-haut {
     position: absolute;
     top: 40px;
@@ -22,7 +21,6 @@ body {
     font-weight: bold;
 }
 
-/* terrain */
 .zone-herbe {
     position: absolute;
     bottom: 0;
@@ -31,7 +29,6 @@ body {
     background-color: #3e9c35;
 }
 
-/* bande herbe */
 .bande-herbe {
     position: absolute;
     bottom: 230px;
@@ -42,7 +39,6 @@ body {
     background-size: auto 100%;
 }
 
-/* cage */
 .cage {
     position: absolute;
     width: 260px;
@@ -51,7 +47,6 @@ body {
     bottom: 230px;
 }
 
-/* ballon à côté */
 .ballon-dehors {
     position: absolute;
     width: 50px;
@@ -59,7 +54,6 @@ body {
     bottom: 200px;
 }
 
-/* bouton */
 .bouton-noir {
     position: absolute;
     bottom: 80px;
