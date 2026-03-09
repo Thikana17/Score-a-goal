@@ -1,4 +1,4 @@
-/* Suppression des marges par défaut pour remplir tout l'écran */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -42,7 +42,6 @@ h1 {
     color: #000;
 }
 
-/* Positionnement de ton image 12.png */
 .illustration {
     position: absolute;
     bottom: 18vh;
@@ -52,7 +51,6 @@ h1 {
     z-index: 15;
 }
 
-/* Zone de l'herbe foncée */
 .grass-container {
     position: absolute;
     bottom: 0;
@@ -62,14 +60,13 @@ h1 {
     z-index: 5;
 }
 
-/* Les brins d'herbe (dents de scie) */
 .grass-blades {
     position: absolute;
     top: -35px;
     width: 100%;
     height: 40px;
     background-color: #1a9c26;
-    /* On définit beaucoup de points pour couvrir tout l'écran */
+    
     clip-path: polygon(
         0% 100%, 100% 100%, 100% 100%, 
         98% 0%, 96% 100%, 94% 0%, 92% 100%, 90% 0%, 88% 100%, 86% 0%, 84% 100%, 
@@ -81,7 +78,6 @@ h1 {
     );
 }
 
-/* Les petits points décoratifs */
 .grass-dots {
     width: 100%;
     height: 100%;
